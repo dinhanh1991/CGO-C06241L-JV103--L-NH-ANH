@@ -1,7 +1,7 @@
 let s =document.sumavg;
 sumavg.done.onclick = function () {
-    if (sumavg.physic.value*1 <0 && sumavg.physic.value*1 > 10 && sumavg.chemistry.value*1 < 0 && sumavg.chemistry.value*1 > 10 && sumavg.biology.value*1 < 0 && sumavg.biology.value *1> 10) {
-        alert('Điểm số không hợp lệ vui lòng nhập lại số tiền phải lớn hơn 0 và nhỏ hơn 10 ');
+    if (sumavg.physic.value*1 <0 || sumavg.physic.value*1 > 10 || sumavg.chemistry.value*1 < 0 || sumavg.chemistry.value*1 > 10 || sumavg.biology.value*1 < 0 || sumavg.biology.value *1> 10) {
+        alert('Điểm số không hợp lệ vui lòng nhập lại điểm số phải lớn hơn 0 và nhỏ hơn 10 ');
     } else {
         sumavg.sum.value=sumavg.physic.value*1 + sumavg.chemistry.value*1 + sumavg.biology.value*1 ;
         sumavg.avg.value=sumavg.sum.value/3;

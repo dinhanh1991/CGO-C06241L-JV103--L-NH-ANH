@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CACULATOR</title>
+    <link rel="stylesheet" type="text/css" href="caculator.css">
+</head>
+<body>
+<div id="caculator">
+    <h1>CACULATOR</h1>
+    <form name="cal">
+<p class="screen">
+    <label for="result"></label>
+    <input type="number" size="100%" name="result" id="result">
+</p>
+        <p class="keyboard"onclick="this">
+            <input type="button" name="nt" onclick="clickboton('(')" value="("/>
+            <input type="button" name="np" onclick="clickboton(this)" value=")"/>
+            <input type="button" name="nt" onclick="clickboton(this)" value="&percnt;"/>
+            <input type="reset" name="nt" onclick="clickboton(this)" value="C"/>
+
+
+            <input type="button" name="number7" onclick="clickboton(this)" value="7"/>
+            <input type="button" name="number8" onclick="clickboton(this)" value="8"/>
+            <input type="button" name="number9" onclick="clickboton(this)" value="9"/>
+            <input type="button" name="divide" onclick="clickboton(this)" value="&divide;"/>
+
+            <input type="button" name="number4" onclick="clickboton(this)" value="4"/>
+            <input type="button" name="number5" onclick="clickboton(this)" value="5"/>
+            <input type="button" name="number6" onclick="clickboton(this)" value="6"/>
+            <input type="button" name="time" onclick="clickboton(this)" value="&times;"/>
+
+            <input type="button" name="number1" onclick="clickboton(this)" value="1"/>
+            <input type="button" name="number2" onclick="clickboton(this)" value="2"/>
+            <input type="button" name="number3" onclick="clickboton(this)" value="3"/>
+            <input type="button" name="minus" onclick="clickboton(this)" value="&minus;"/>
+
+            <input type="button" name="numberzero" onclick="clickboton(this)" value="0"/>
+            <input type="button" name="point" onclick="clickboton(this)" value="."/>
+            <input type="button" name="equal" onclick="clickboton(this)" value="&equals;"/>
+            <input type="button" name="nt" onclick="clickboton(this)" value="&plus;"/>
+        </p>
+    </form>
+</div>
+<script src="caculator.js"></script>
+</body>
+</html>
