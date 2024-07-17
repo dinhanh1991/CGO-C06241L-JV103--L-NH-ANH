@@ -5,8 +5,8 @@ sumavg.done.onclick = function () {
     } else {
         sumavg.sum.value=sumavg.physic.value*1 + sumavg.chemistry.value*1 + sumavg.biology.value*1 ;
         sumavg.avg.value=sumavg.sum.value/3;
-        return(sumavg.avg.value);
-        return(sumavg.sum.value);
+        // return(sumavg.avg.value);
+        // return(sumavg.sum.value);
     }
 }
 let a=document.temp;
